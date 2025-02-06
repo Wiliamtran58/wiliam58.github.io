@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Tên</title>
+    <script>
+        function goToRegisterPage() {
+            let username = document.getElementById('username').value;
+            if (!username) {
+                alert('Vui lòng nhập tên!');
+                return;
+            }
+            window.location.href = 'https://84win.net/vit/home/index/in-play?isReg=1';
+        }
+    </script>
+</head>
+<body>
+    <h2>Nhập Tên</h2>
+    <input type="text" id="username" placeholder="Nhập tên của bạn">
+    <button onclick="goToRegisterPage()">Tiếp theo</button>
+</body>
+</html>
